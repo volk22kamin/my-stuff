@@ -32,11 +32,9 @@ for turn in range(1, 5):
         break
     else:
         if guess_row - 1 not in range(0, 5) or guess_collum - 1 not in range(0, 5):
-            print("Oops, that's not even in the ocean.")
-            print('please guess again')
+            print("Oops, that's not even in the ocean.\nplease guess again")
         elif board[guess_row - 1][guess_collum - 1] == 'X':
-            print("You guessed that one already.")
-            print('please guess again')
+            print("You guessed that one already.\nplease guess again")
         else:
             print('you missed! ')
             board[guess_row - 1][guess_collum - 1] = 'X'
